@@ -1,0 +1,23 @@
+{
+  "name": "assisti_sk",
+  "version": "1.0.0",
+  "description": " Desenvolvimento de um sistema desktop para gestão de ordem de serviços de uma assistência técnica de computadores e notebooks.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somadekadane/assisti_sk.git"
+  },
+  "author": "Eder Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/somadekadane/assisti_sk/issues"
+  },
+  "homepage": "https://github.com/somadekadane/assisti_sk#readme",
+  "devDependencies": {
+    "electron": "^34.2.0"
+  }
+}
