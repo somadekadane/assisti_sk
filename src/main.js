@@ -1,6 +1,6 @@
 // console.log("Processo principal")
 
-const { app, BrowserWindow, nativeTheme } = require('electron')
+const { app, BrowserWindow, nativeTheme, Menu } = require('electron')
 
 //Janela principal
 let win
@@ -14,6 +14,9 @@ const createWindow = () => {
         //minimizable: false,
         resizable: false
     })
+
+    // menu personalizado
+    Menu.setApplicationMenu(Menu.buildFromTemplate(template))
 
     win.loadFile('./src/views/index.html')
 }
@@ -35,5 +38,22 @@ app.on('window-all-closed', () => {
         app.quit()
     }
 })
+
+//template do Menu
+const template = [
+    {
+        label: 'Cadastro'
+    },
+    {
+        label: 'Relatórios'
+    },
+
+    {
+        label: 'Ferramentas'
+    },
+    {
+        label: 'Ajuda'
+    }
+]
 
 
