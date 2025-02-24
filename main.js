@@ -85,7 +85,18 @@ const template = [
         ]
     },
     {
-        label: 'Relatórios'
+        label: 'Relatórios', 
+        submenu: [
+            {
+                label: 'Clientes'
+            },
+            {
+                label: 'OS Abertas'
+            },
+            {
+                label:'OS Concluídas'
+            }
+        ]
     },
     {
         label: 'Ferramentas',
